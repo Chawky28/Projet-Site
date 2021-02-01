@@ -13,6 +13,7 @@
 		let result = y % x ;
 		const graduation = prenom + b ;
 		let h = 0;
+		let prez = "bonjour je m'appel Hacene"
 
         document.getElementById('p1').innerHTML =  'type de prenom : ' + typeof prenom;
         document.getElementById('p2').innerHTML = 'type d\'age : ' + typeof  age;
@@ -111,3 +112,26 @@
         	"j stock la valeur "+j+" lors du passage "+(j+1)+" dans la boucle <br>";
         	++j;
         }
+
+        document.getElementById("p15").innerHTML = Math.random();
+        let prez2 = prez.replace("Hacene","chawky");
+        document.getElementById("p16").innerHTML = prez2;
+
+        function aleatoire() {
+        	return Math.random() * 100;
+        }
+
+        document.getElementById("p17").innerHTML = aleatoire() ;
+
+        function multiplication(nombre1, nombre2){
+        	return nombre1 +"*"+ nombre2 + "=" + (nombre1 * nombre2) ;
+        }
+
+        document.getElementById("p18").innerHTML = multiplication(y,h);
+       
+       let nombre1 = prompt("Entrez premier nombre");
+       let nombre2 = prompt("Entrez deuxieme nombre");
+
+       let resultatDiv = div(nombre1,nombre2);
+       document.getElementById("p19").innerHTML = resultatDiv;
+       
